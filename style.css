@@ -1,0 +1,212 @@
+body {
+    background-color: slategray;
+}
+
+.container {
+    width: 30vw;
+    font-family: sans-serif;
+    color: white;
+    background-color: grey;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-weight: 700;
+    display: grid;
+    grid-template-areas:
+    "resultado resultado resultado resultado" 
+    "C C X div"
+    "sete oito nove vez"
+    "quatro cinco seis men"
+    "um dois tres mai"
+    "ze ze ponto eq"
+}
+
+
+.botao {
+    padding: 2.5rem;
+    font-size: 26px;
+    background-color: #444;
+    border: 3px solid #666;
+}
+
+.botao:hover {
+    opacity: 0.8;;
+}
+
+.resultado {
+    grid-area: resultado;
+    border-top: 6px solid #666;
+    border-left: 6px solid #666;
+    border-right: 6px solid #666;
+}
+
+.resultado:hover {
+    opacity: 1;
+}
+
+.botao-c {
+    grid-area: C;
+    border-left: 6px solid #666;
+}
+
+.botao-ze {
+    grid-area: ze;
+    border-left: 6px solid #666;
+    border-bottom: 6px solid #666;
+}
+
+.botao-X {
+    grid-area: X;
+    color: lightcoral;
+}
+
+.sp {
+    background-color: orange;
+    border-right: 6px solid #666;
+}
+
+.botao-div {
+    grid-area: div;
+}
+
+.botao-vez {
+    grid-area: vez;
+}
+
+.botao-men {
+    grid-area: men;
+}
+
+.botao-mai {
+    grid-area: mai;
+}
+
+.botao-eq {
+    grid-area: eq;
+    border-bottom: 6px solid #666;
+}
+
+.botao-ponto {
+    grid-area: ponto;
+    border-bottom: 6px solid #666;
+}
+
+.botao-um {
+    grid-area: um;
+    border-left: 6px solid #666;
+}
+
+.botao-dois {
+    grid-area: dois;
+}
+
+.botao-tres {
+    grid-area: tres;
+}
+
+.botao-quatro {
+    grid-area: quatro;
+    border-left: 6px solid #666;
+}
+
+.botao-cinco {
+    grid-area: cinco;
+}
+
+.botao-seis {
+    grid-area: seis;
+}
+
+.botao-sete {
+    grid-area: sete;
+    border-left: 6px solid #666;
+}
+
+.botao-oito {
+    grid-area: oito;
+}
+
+.botao-nove {
+    grid-area: nove;
+}
+
+@media screen and (max-width: 375px){
+    .container {
+        width: 80vw;
+        top: 5%;
+    }
+
+    .resultado {
+        min-width: 230px;
+        min-height: 40px;
+    }
+
+    .botao {
+        padding: 0.5rem;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 375px){
+    .container {
+        width: 80vw;
+        top: 5%;
+    }
+
+    .resultado {
+        min-width: 256px;
+        min-height: 40px;
+    }
+
+    .botao {
+        padding: 1rem;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .container {
+        width: 80vw;
+    }
+
+    .botao {
+        padding: 1rem;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 45vw;
+        left: 30%;
+    }
+
+    .botao {
+        padding: 1.5rem;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container {
+        width: 40vw;
+        left: 30%;
+    }
+
+    .botao {
+        padding: 1.5rem;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container {
+        width: 30vw;
+        left: 35%;
+    }
+
+    .botao {
+        padding: 1.5rem;
+        font-size: 30px;
+    }
+}
