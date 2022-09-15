@@ -12,7 +12,7 @@ const op = document.querySelectorAll('.sp')
 let resposta = '';
 
 
-//Numeros Para a resposta
+//Numeros para a resposta
 
 num[0].addEventListener('click', () => {
     resposta += '0';
@@ -64,7 +64,7 @@ num[9].addEventListener('click', () => {
     resultado.textContent = resposta;
 })
 
-//Operacoes
+// Operacoes
 
 op[0].addEventListener('click', () => {
     resposta += '/';
