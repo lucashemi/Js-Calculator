@@ -2,7 +2,7 @@
 
 A simple and elegant web calculator that handles all four basic operations.
 
-You can click here to test it: ![Js-Calculator](https://js-calculator-git-master-lucashemi.vercel.app/)
+You can click here to test it: ![Js-Calculator](https://js-calculator-git-master-lucashemi.vercel.app)
 
 # Screenshot
 
