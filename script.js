@@ -1,107 +1,118 @@
-// Teclas
+let results = document.querySelector('.results')
+let answer = '';
+let answered = false;
 
-let resultado = document.querySelector('.resultado')
-const c = document.querySelector('.botao-c')
-const X = document.querySelector('.botao-X')
-const ponto = document.querySelector('.botao-ponto')
+const c = document.querySelector('.button-c')
+const X = document.querySelector('.button-X')
+const dot = document.querySelector('.button-dot')
 const num = document.querySelectorAll('.num')
 const op = document.querySelectorAll('.sp')
 
-// Resposta
-
-let resposta = '';
-
-
-//Numeros para a resposta
+// Numbers
 
 num[0].addEventListener('click', () => {
-    resposta += '0';
-    resultado.textContent = resposta;
+    answer += '0';
+    results.textContent = answer;
 })
 
 num[1].addEventListener('click', () => {
-    resposta += '1';
-    resultado.textContent = resposta;
+    answer += '1';
+    results.textContent = answer;
 })
 
 num[2].addEventListener('click', () => {
-    resposta += '2';
-    resultado.textContent = resposta;
+    answer += '2';
+    results.textContent = answer;
 })
 
 num[3].addEventListener('click', () => {
-    resposta += '3';
-    resultado.textContent = resposta;
+    answer += '3';
+    results.textContent = answer;
 })
 
 num[4].addEventListener('click', () => {
-    resposta += '4';
-    resultado.textContent = resposta;
+    answer += '4';
+    results.textContent = answer;
 })
 
 num[5].addEventListener('click', () => {
-    resposta += '5';
-    resultado.textContent = resposta;
+    answer += '5';
+    results.textContent = answer;
 })
 
 num[6].addEventListener('click', () => {
-    resposta += '6';
-    resultado.textContent = resposta;
+    answer += '6';
+    results.textContent = answer;
 })
 
 num[7].addEventListener('click', () => {
-    resposta += '7';
-    resultado.textContent = resposta;
+    answer += '7';
+    results.textContent = answer;
 })
 
 num[8].addEventListener('click', () => {
-    resposta += '8';
-    resultado.textContent = resposta;
+    answer += '8';
+    results.textContent = answer;
 })
 
 num[9].addEventListener('click', () => {
-    resposta += '9';
-    resultado.textContent = resposta;
+    answer += '9';
+    results.textContent = answer;
 })
 
-// Operacoes
+// Operations
 
 op[0].addEventListener('click', () => {
-    resposta += '/';
-    resultado.textContent = resposta;
+    answer += '/';
+    results.textContent = answer;
 })
 
 op[1].addEventListener('click', () => {
-    resposta += '*';
-    resultado.textContent = resposta;
+    answer += '*';
+    results.textContent = answer;
 })
 
 op[2].addEventListener('click', () => {
-    resposta += '-';
-    resultado.textContent = resposta;
+    answer += '-';
+    results.textContent = answer;
 })
 
 op[3].addEventListener('click', () => {
-    resposta += '+';
-    resultado.textContent = resposta;
+    answer += '+';
+    results.textContent = answer;
 })
+
+// Equals (=)
 
 op[4].addEventListener('click', () => {
-    resposta = eval(resposta);
-    resultado.textContent = resposta;
+    answered = true;
+    answer = eval(answer);
+    results.textContent = answer;
 })
 
-ponto.addEventListener('click', () => {
-    resposta += '.';
-    resultado.textContent = resposta;
+// Dot (.)
+
+dot.addEventListener('click', () => {
+    answer += '.';
+    results.textContent = answer;
 })
+
+// Clear (C)
 
 c.addEventListener('click', () => {
-    resposta = '';
-    resultado.textContent = resposta;
+    answer = '';
+    results.textContent = answer;
 })
 
+// Remove (X)
+
 X.addEventListener('click', () => {
-    resposta = resposta.slice(0, -1);
-    resultado.textContent = resposta;
+	if (answered == true) {
+    	answer = '';
+    	results.textContent = answer;
+    	answered = false;
+    	return;
+    }
+    answer = answer.slice(0, -1);
+    results.textContent = answer;
 })

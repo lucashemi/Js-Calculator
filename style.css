@@ -13,50 +13,50 @@ body {
     font-weight: 700;
     display: grid;
     grid-template-areas:
-    "resultado resultado resultado resultado" 
+    "results results results results" 
     "C C X div"
-    "sete oito nove vez"
-    "quatro cinco seis men"
-    "um dois tres mai"
-    "ze ze ponto eq"
+    "seven eight nine mult"
+    "four five six min"
+    "one two three plus"
+    "z z dot eq"
 }
 
 
-.botao {
+.buttons {
     padding: 2.5rem;
     font-size: 26px;
     background-color: #444;
     border: 3px solid #666;
 }
 
-.botao:hover {
+.buttons:hover {
     opacity: 0.8;;
 }
 
-.resultado {
-    grid-area: resultado;
+.results {
+    grid-area: results;
     border-top: 6px solid #666;
     border-left: 6px solid #666;
     border-right: 6px solid #666;
-    overflow: scroll;
+    overflow: auto;
 }
 
-.resultado:hover {
+.results:hover {
     opacity: 1;
 }
 
-.botao-c {
+.button-c {
     grid-area: C;
     border-left: 6px solid #666;
 }
 
-.botao-ze {
-    grid-area: ze;
+.button-z {
+    grid-area: z;
     border-left: 6px solid #666;
     border-bottom: 6px solid #666;
 }
 
-.botao-X {
+.button-X {
     grid-area: X;
     color: lightcoral;
 }
@@ -66,69 +66,69 @@ body {
     border-right: 6px solid #666;
 }
 
-.botao-div {
+.button-div {
     grid-area: div;
 }
 
-.botao-vez {
-    grid-area: vez;
+.button-mult {
+    grid-area: mult;
 }
 
-.botao-men {
-    grid-area: men;
+.button-min {
+    grid-area: min;
 }
 
-.botao-mai {
-    grid-area: mai;
+.button-plus {
+    grid-area: plus;
 }
 
-.botao-eq {
+.button-eq {
     grid-area: eq;
     border-bottom: 6px solid #666;
 }
 
-.botao-ponto {
-    grid-area: ponto;
+.button-dot {
+    grid-area: dot;
     border-bottom: 6px solid #666;
 }
 
-.botao-um {
-    grid-area: um;
+.button-one {
+    grid-area: one;
     border-left: 6px solid #666;
 }
 
-.botao-dois {
-    grid-area: dois;
+.button-two {
+    grid-area: two;
 }
 
-.botao-tres {
-    grid-area: tres;
+.button-three {
+    grid-area: three;
 }
 
-.botao-quatro {
-    grid-area: quatro;
+.button-four {
+    grid-area: four;
     border-left: 6px solid #666;
 }
 
-.botao-cinco {
-    grid-area: cinco;
+.button-five {
+    grid-area: five;
 }
 
-.botao-seis {
-    grid-area: seis;
+.button-six {
+    grid-area: six;
 }
 
-.botao-sete {
-    grid-area: sete;
+.button-seven {
+    grid-area: seven;
     border-left: 6px solid #666;
 }
 
-.botao-oito {
-    grid-area: oito;
+.button-eight {
+    grid-area: eight;
 }
 
-.botao-nove {
-    grid-area: nove;
+.button-nine {
+    grid-area: nine;
 }
 
 @media screen and (max-width: 375px){
@@ -137,12 +137,12 @@ body {
         top: 5%;
     }
 
-    .resultado {
+    .results {
         min-width: 230px;
         min-height: 40px;
     }
 
-    .botao {
+    .buttons {
         padding: 0.5rem;
         font-size: 28px;
     }
@@ -154,12 +154,12 @@ body {
         top: 5%;
     }
 
-    .resultado {
+    .results {
         min-width: 256px;
         min-height: 40px;
     }
 
-    .botao {
+    .buttons {
         padding: 1rem;
         font-size: 30px;
     }
@@ -170,7 +170,7 @@ body {
         width: 80vw;
     }
 
-    .botao {
+    .buttons {
         padding: 1rem;
         font-size: 30px;
     }
@@ -182,7 +182,7 @@ body {
         left: 30%;
     }
 
-    .botao {
+    .buttons {
         padding: 1.5rem;
         font-size: 30px;
     }
@@ -194,7 +194,7 @@ body {
         left: 30%;
     }
 
-    .botao {
+    .buttons {
         padding: 1.5rem;
         font-size: 30px;
     }
@@ -206,7 +206,7 @@ body {
         left: 35%;
     }
 
-    .botao {
+    .buttons {
         padding: 1.5rem;
         font-size: 30px;
     }
