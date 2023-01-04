@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+    box-shadow: 14px 14px 5px #222;
     width: 30vw;
     font-family: sans-serif;
     color: white;
@@ -14,11 +15,11 @@ body {
     display: grid;
     grid-template-areas:
     "results results results results" 
-    "C C X div"
+    "clear clear X div"
     "seven eight nine mult"
     "four five six min"
     "one two three plus"
-    "z z dot eq"
+    "zero zero dot eq"
 }
 
 
@@ -30,7 +31,7 @@ body {
 }
 
 .buttons:hover {
-    opacity: 0.8;;
+    opacity: 0.8;
 }
 
 .results {
@@ -45,13 +46,13 @@ body {
     opacity: 1;
 }
 
-.button-c {
-    grid-area: C;
+.button-C {
+    grid-area: clear;
     border-left: 6px solid #666;
 }
 
-.button-z {
-    grid-area: z;
+.button-zero {
+    grid-area: zero;
     border-left: 6px solid #666;
     border-bottom: 6px solid #666;
 }
